@@ -32,6 +32,15 @@
         Inicia Sesión con tu cuenta
       </v-card-subtitle>
 
+      <v-alert
+        v-if="auth.hasError"
+        class="my-5"
+        color="error"
+        icon="$success"
+        :title="auth.errorMsg"
+      ></v-alert>
+
+
       <v-form class="mt-5">
         <v-text-field 
           type="email"
