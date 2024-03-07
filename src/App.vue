@@ -27,7 +27,7 @@
             <v-btn :to="{name: 'admin-propiedades'}">
              Admin
             </v-btn>
-            <v-btn :to="{name: 'login'}">
+            <v-btn @click="auth.logout">
               Cerrar Sesión
             </v-btn>
           </div>
