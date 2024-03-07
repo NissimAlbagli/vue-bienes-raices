@@ -1,6 +1,6 @@
 import { ref, computed, onMounted } from 'vue';
 import { defineStore } from 'pinia';
-import { useCollection, useFirebaseAuth } from 'vuefire';
+import { useFirebaseAuth } from 'vuefire';
 import { signInWithEmailAndPassword, onAuthStateChanged, signOut } from 'firebase/auth';
 import { useRouter } from 'vue-router';
 
