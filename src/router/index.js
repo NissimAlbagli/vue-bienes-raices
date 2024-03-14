@@ -27,7 +27,8 @@ const router = createRouter({
       component: () => import('../views/admin/AdminLayout.vue'),
       meta: { requiresAuth: true},
       children: [
-        {
+        { 
+          // Se pueden dejar solo como el nombre, ej: propiedades seria /admin/propiedades
           path: '/admin/propiedades',
           name: 'admin-propiedades',
           component: () => import('../views/admin/AdminView.vue')
